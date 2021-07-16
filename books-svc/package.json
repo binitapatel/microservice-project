@@ -1,0 +1,44 @@
+{
+  "name": "hus-microservices",
+  "version": "1.0.0",
+  "description": "Micro services for historical chart portal application",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix .",
+    "husky": {
+      "hooks": {
+        "pre-commit": "npm run lint"
+      }
+    }
+  },
+  "author": "binita.patel@oncor.com",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.23.2",
+    "http-errors": "^1.7.3",
+    "mongoose": "^5.9.20",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  }
+}

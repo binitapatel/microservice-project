@@ -1,0 +1,41 @@
+{
+  "env": {
+    "es2020": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "google"],
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "script"
+  },
+  "rules": {
+    // enable additional rules
+    "indent": [
+      "error",
+      4
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    // override default options for rules from base configurations
+    "comma-dangle": ["error", {"functions": "never"}],
+    "no-multiple-empty-lines": [ 2, { "max": 1, "maxEOF": 0, "maxBOF": 0 } ],
+    "quotes": [ 1, "single", "avoid-escape" ],
+    "no-use-before-define": [ 0 ],
+    "prefer-const": 1,
+    "class-methods-use-this": [ 1 ],
+    "no-case-declarations": [ 1 ],
+    "no-return-assign": [ 1 ],
+    "no-shadow": [ 1 ],
+    "camelcase": [ 1 ],
+    "no-underscore-dangle" : [ 0, "always" ],
+    "max-len": ["error", { "code": 120 }],
+    "no-unused-vars": ["error", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
+    "no-useless-escape": [0]
+  }
+}
